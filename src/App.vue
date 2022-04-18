@@ -1,30 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+
+  <NavBar/>
+  <router-view/>
+
+  <!-- <div class="container mt-3">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <p class="fw-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe dolor commodi eligendi! Labore laborum, molestiae eaque odio in accusantium atque impedit tempora distinctio esse blanditiis eligendi numquam repellat, dignissimos nemo.</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <Register/> -->
+    <!-- <AuthUser/> -->
+    <!-- <Spinner/> -->
+    <!-- <UserList/> -->
+
+  <!-- </div> -->
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import UserList from "@/components/UserList";
+// import Spinner from "@/components/Spinner.vue";
+import NavBar from "@/components/NavBar.vue"
 
-nav {
-  padding: 30px;
+export default {
+  components: { NavBar }
 }
+</script>
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style scoped>
+  @import "./styles.css";
 </style>

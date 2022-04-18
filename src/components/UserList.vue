@@ -6,7 +6,7 @@
                 <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui id enim ipsum adipisci nesciunt ex esse minus optio molestias?</p>
             </div>
         </div>
-        <div v-if="!loading">
+        <div v-if="loading">
             <Spinner/>
         </div>
         <div v-if="errorMessage">
@@ -45,10 +45,10 @@
 
 <script>
 import { UserService } from "@/services/UserService";
-import { Spinner } from "@/components/Spinner";
+import Spinner  from "@/components/Spinner";
 
 export default {
-    // components: { Spinner },
+    components: { Spinner },
     name: 'UserList',
     data: function(){
         return {

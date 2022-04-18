@@ -19,8 +19,9 @@
 
 <script>
 import { UserService } from '@/services/UserService';
-import { Spinner } from '@/components/Spinner.vue';
+import { Spinner } from '@/components/Spinner';
 export default {
+    components: { Spinner },
     name: 'UserDetails',
     data: function(){
         return {
